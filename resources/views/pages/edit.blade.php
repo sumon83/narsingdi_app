@@ -7,18 +7,11 @@
                         <h1 class="center-text">Division</h1>
                         <div class="col-xs-6">
                                 <p>Edit Division </p>
-<<<<<<< HEAD
                                 <?php //var_dump($division);die;?>
                                 {{ Form::open(['id'=>'division_form', 'action' => ['DivisionsController@update', $division->id], 'method'=>'Post']) }}
                                 <div class="form_group">
                                         {{ Form::label('division_name_eng', 'Division Name') }}
                                         {{ Form::text('division_name_eng', $division->division_name_eng, ['class' => 'form-control', 'placeholder' => 'Division Name', 'id' => 'division_name'])}}                                
-=======
-                                {!! Form::open(['id'=>'division_form', 'action' => ['DivisionController@update', $division->id], 'method'=>'Post']) !!}
-                                <div class="form_group">
-                                        {{ Form::label('division_name', 'Division Name') }}
-                                        {{ Form::text('division_name', $division->division_name, ['class' => 'form-control', 'placeholder' => 'Division Name', 'id' => 'division_name'])}}                                
->>>>>>> 475aa789a66f4b546a1ea6f91672658dc27758bf
                                 </div>
                                 <div class="form_group">
                                         {{ Form::label('division_name_bangla', 'Division Name Bangla') }}

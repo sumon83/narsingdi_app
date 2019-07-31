@@ -7,13 +7,8 @@
                 <h1>Division</h1>
                 <div class="col-xs-5">
                         <p>Insert Division of Bangladesh</p>
-<<<<<<< HEAD
                         {{ Form::open(['id'=>'division_form', 'action' => 'DivisionsController@store',
                         'method'=>'Post']) }}
-=======
-                        {!! Form::open(['id'=>'division_form', 'action' => 'DivisionController@store',
-                        'method'=>'Post']) !!}
->>>>>>> 475aa789a66f4b546a1ea6f91672658dc27758bf
                         <div class="form_group">
                                 {{ Form::label('division_name', 'Division Name') }}
                                 {{ Form::text('division_name', '', ['class' => 'form-control', 'placeholder' => 'Division Name', 'id' => 'division_name'])}}
@@ -29,11 +24,7 @@
 
                         {{ Form::submit('submit', ['class' => 'btn btn-primary', 'id' => 'submit'])}}
 
-<<<<<<< HEAD
                         {{ Form::close() }}
-=======
-                        {!! Form::close() !!}
->>>>>>> 475aa789a66f4b546a1ea6f91672658dc27758bf
                 </div>
                 <div class="col-xs-7">
                         <div class="data_table">
@@ -54,7 +45,6 @@
                                                 @foreach ($divisions as $division)
                                                 <tr>
                                                         <td>{{$i}}</td>
-<<<<<<< HEAD
                                                         <td>{{$division->division_name_eng}}</td>
                                                         <td>{{$division->division_name_bangla}}</td>
                                                         <td>{{$division->division_code}}</td>
@@ -63,16 +53,6 @@
                                                         {{ Form::open(['action'=>['DivisionsController@destroy',$division->id], 'method'=>'POST', 'class'=> 'pull-right'])}} 
                                                 {{Form::hidden('_method', 'DELETE')}}
                                                 {{Form::submit('Delete', ['class'=>'delete_table_data btn btn-danger'])}}
-=======
-                                                        <td>{{$division->division_name}}</td>
-                                                        <td>{{$division->division_name_bangla}}</td>
-                                                        <td>{{$division->division_code}}</td>
-                                                        <td><a href="{{url('division')}}/{{$division->id}}/edit")}}
-                                                                        class="eidt ">Edit</a> || 
-                                                        {!! Form::open(['action'=>['DivisionController@destroy',$division->id], 'method'=>'POST', 'class'=> 'pull-right'])!!} 
-                                                {{Form::hidden('_method', 'DELETE')}}
-                                                {{Form::submit('Delete', [])}}
->>>>>>> 475aa789a66f4b546a1ea6f91672658dc27758bf
 
                                                 {!! Form::close()!!}</td>
                                                 </tr>

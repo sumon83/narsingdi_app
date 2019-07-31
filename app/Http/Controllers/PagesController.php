@@ -2,28 +2,18 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< HEAD
 use App\cr;
-=======
->>>>>>> 475aa789a66f4b546a1ea6f91672658dc27758bf
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-<<<<<<< HEAD
     
-=======
->>>>>>> 475aa789a66f4b546a1ea6f91672658dc27758bf
     public function index() {
         $headline = array(
             'headline' => "BD Model Test",
             'slogan' => "A handy tool to test your skills",
         );
-<<<<<<< HEAD
         
-=======
-       
->>>>>>> 475aa789a66f4b546a1ea6f91672658dc27758bf
         return view('pages.index')->with( $headline);
     }
     public function division() {
@@ -75,8 +65,5 @@ class PagesController extends Controller
     //         'headline', $headline
     //     );
     // }
-<<<<<<< HEAD
     
-=======
->>>>>>> 475aa789a66f4b546a1ea6f91672658dc27758bf
 }

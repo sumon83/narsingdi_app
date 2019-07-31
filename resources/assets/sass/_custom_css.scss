@@ -1,0 +1,197 @@
+/* Created on : January 06, 2019
+   Author: Mohammad Shafiqur Rahman */
+
+/* @font-face {
+font-family: FontAwesome;
+src: url("../fonts/fontawesome-webfont.ttf"),
+    url("../fonts/FontAwesome.otf"),
+    url("../fonts/fontawesome-webfont.woff"),
+    url("../fonts/fontawesome-webfont.woff2"),
+    url("../fonts/fontawesome-webfont.eot"),
+    url("../fonts/fontawesome-webfont.svg");
+}
+
+@font-face {
+    font-family: MyriadPro-BoldCondensed;
+    src: url("../fonts/myriadpro/MYRIADPRO-BOLDCOND_0.ttf"),
+        url("../fonts/myriadpro/MYRIADPRO-BOLDCOND_0.otf"),
+        url("../fonts/myriadpro/MYRIADPRO-BOLDCOND_0.woff"),
+        url("../fonts/myriadpro/MYRIADPRO-BOLDCOND_0.eot");
+}
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url("../fonts/myriadpro/MYRIADPRO-REGULAR_0.ttf"),
+        url("../fonts/myriadpro/MYRIADPRO-REGULAR_0.otf"),
+        url("../fonts/myriadpro/MYRIADPRO-REGULAR_0.woff"),
+        url("../fonts/myriadpro/MYRIADPRO-REGULAR_0.eot");
+}
+@font-face {
+    font-family: JosefinSans-Regular;
+    src: url("../fonts/josefinsans/JosefinSans-Regular.ttf"),
+        url("../fonts/josefinsans/JosefinSans-Regular.woff"),
+        url("../fonts/josefinsans/JosefinSans-Regular.eot");
+} */
+* {outline: none !important;}
+.clr-both {clear: both;}
+/*================= Header ===================*/
+header {
+    background: rgb(102,45,145); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(102,45,145,1) 0%, rgba(152,62,205,1) 50%, rgba(102,45,145,1) 100%, rgba(152,62,205,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(102,45,145,1)), color-stop(50%,rgba(152,62,205,1)), color-stop(100%,rgba(102,45,145,1)), color-stop(100%,rgba(152,62,205,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(102,45,145,1) 0%,rgba(152,62,205,1) 50%,rgba(102,45,145,1) 100%,rgba(152,62,205,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(102,45,145,1) 0%,rgba(152,62,205,1) 50%,rgba(102,45,145,1) 100%,rgba(152,62,205,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(102,45,145,1) 0%,rgba(152,62,205,1) 50%,rgba(102,45,145,1) 100%,rgba(152,62,205,1) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(102,45,145,1) 0%,rgba(152,62,205,1) 50%,rgba(102,45,145,1) 100%,rgba(152,62,205,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#662d91', endColorstr='#983ecd',GradientType=1 ); /* IE6-9 */
+    padding-top: 15px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+}
+.logo a, .logo .site-title {display: table-cell; vertical-align: middle;}
+.logo-img {padding-right: 15px;}
+.site-title h1 {margin: 0;}
+.site-title a {font-size: 40px; text-decoration: none; font-family: MyriadPro-BoldCondensed; color: #ffffff;}
+.site-title p {font-size: 11px; color: #ffffff;}
+
+.log-reg a {color: #fff; font-family: MyriadPro-Regular; font-size: 18px;}
+.log-reg span {color: #fff; margin: 0 8px; font-size: 16px;}
+.fa-phone {font-size: 30px; font-weight: bold; letter-spacing: 1.5px; color: #fff;}
+.fa-phone span {font-family: MyriadPro-BoldCondensed; padding-left: 10px;}
+
+
+/*================= Navigation ===================*/
+.nav-banner {background: url(../../../public/img/banner-bg.png) repeat-x;}
+
+.navbar-brand {display: none;}
+.navbar-default {background: none; border: 0; border-radius:0;}
+.navbar-collapse {padding-left: 0; padding-right: 0;}
+.navbar {margin-bottom: 0; min-height: 35px;}
+.navbar-nav > li {margin: 0 5px;}
+.navbar-nav > li > a {padding-top: 6px; padding-bottom: 6px; border: 1px solid transparent; font-size: 22px; font-family: MyriadPro-BoldCondensed;}
+.navbar-default .navbar-nav > li > a {color: #020202;}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover
+{
+    background: url(/img/menu-bg.png) repeat; border: 1px solid #aeb8dc; color: #69269a; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;
+}
+
+/*================= Content Area ===================*/
+.site-content {min-height: 550px;}
+
+/*================= Banner ===================*/
+.girl-img {height: 480px; background: url(/img/girl.png) no-repeat right top; margin-top: -35px;}
+.banner-inner {padding-top: 110px;}
+.slogan {color: #010101; font-size: 72px; font-family: MyriadPro-BoldCondensed; line-height: normal !important; margin-bottom: 0;}
+.subtitle {color: #10a3f5; font-size: 32px; font-family: MyriadPro-Regular;}
+
+
+.sample-test {background: url(/img/test-bg.png) repeat; padding: 10px 10px 50px 10px; margin-top: 40px;}
+.sample-test-title {font-size: 20px; font-weight: bold; color: #020202;background: url(/img/sample-test-img.png) no-repeat left center; padding-left: 35px; line-height: 30px; border-bottom: 1px solid #cab7d9; margin-top: 0; margin-bottom: 18px; padding-bottom: 8px;}
+.sample-test label {color: #fcfcfd;}
+.sample-test .btn-default {background-color: #00bff3; border-color: #337f94; color: #fff;}
+.sample-test .btn-default.active, .sample-test .btn-default.focus, .sample-test .btn-default:active, .sample-test .btn-default:focus, .sample-test .btn-default:hover, .open > .sample-test .dropdown-toggle.btn-default {background-color: #04a8d5;}
+
+/*================= New released Model Tests ===================*/
+.new-released-model-tests {background: #8b5fab; padding-bottom: 15px;}
+.new-released-model-tests h2 {color: #010101; margin-bottom: 20px; font-size: 26px; font-weight: bold;}
+.nrmt-box {margin-top: 10px; margin-bottom: 10px;}
+.new-released-model-tests h5 {font-size: 20px; color: #fff; margin-top: 0; font-weight: bold; margin-bottom: 5px;}
+.nrmt-img {padding-right: 0;}
+.nrmt-school {margin-bottom: 3px; color: #010101; font-size: 16px; font-weight: bold;}
+.nrmt-subject-class {font-size: 17px; color: #010101;}
+.nrmt-subject-class span {color: #ffffff; margin-left: 7px;}
+.nrmt-des {color: #010101;}
+.new-released-model-tests .btn-default {background-color: #00bff3; border-color: #337f94; color: #fff; border-radius: 5px;}
+.new-released-model-tests .btn-default:hover {background-color: #04a8d5;}
+
+/*================= Testimonials ===================*/
+.testimonials {padding: 30px 0; border-bottom: 1px solid #cecece; margin-bottom: 10px;}
+.testimonials h2 {color: #118ad8; margin-bottom: 20px; font-size: 26px; font-weight: bold;}
+.testimonials a {color: #fdb915;}
+
+/*================= Model Test Page ===================*/
+.boy-img {height: 480px; background: url(/img/model-test-bg.png) no-repeat left top; margin-top: -35px;}
+.mt-slogan {color: #010101; font-size: 65px; font-family: MyriadPro-BoldCondensed; line-height: normal !important; margin-top: 70px; margin-bottom: 0;}
+.mt-subtitle {color: #10a3f5; font-size: 32px; font-family: MyriadPro-Regular;}
+.mt-step {font-size: 26px; color: #fcfcfd;}
+.mt-step-col {padding-left: 0;}
+.mt-white-bold {font-size: 20px; color: #fff;}
+.mt-black-bold {font-size: 20px; color: #000;}
+.mt-step-box {background: url(/img/test-bg.png) repeat; padding: 10px 10px 5px 10px; margin-top: 40px; font-size: 19px; color: #000; font-family: MyriadPro-BoldCondensed;}
+.mt-step-box-title {font-size: 24px; font-weight: bold; color: #020202;background: url(/img/sample-test-img.png) no-repeat left center; padding-left: 50px; line-height: 30px; border-bottom: 1px solid #cab7d9; margin-top: 0; margin-bottom: 18px; padding-bottom: 8px;}
+.mt-step-box .btn-default {background-color: #00bff3; border-color: #337f94; color: #fff; font-size: 21px; font-family: MyriadPro-Regular;}
+.mt-step-box .btn-default.active, .mt-step-box .btn-default.focus, .mt-step-box .btn-default:active, .mt-step-box .btn-default:focus, .mt-step-box .btn-default:hover, .open > .mt-step-box .dropdown-toggle.btn-default {background-color: #04a8d5;}
+.mt-step-box-row {margin-bottom: 20px;}
+
+/*================= Choose Your Model Test ===================*/
+.choose-model-test {background: #00bff3; padding: 30px 0; margin-top: 20px;}
+.cmt-box {
+    padding: 10px 10px 5px 10px;
+    border: 1px solid #96e5fa;
+    background: rgb(0,124,158); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0,124,158,1) 0%, rgba(0,179,228,1) 50%, rgba(0,124,158,1) 100%, rgba(102,45,145,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,124,158,1)), color-stop(50%,rgba(0,179,228,1)), color-stop(100%,rgba(0,124,158,1)), color-stop(100%,rgba(102,45,145,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,124,158,1) 0%,rgba(0,179,228,1) 50%,rgba(0,124,158,1) 100%,rgba(102,45,145,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,124,158,1) 0%,rgba(0,179,228,1) 50%,rgba(0,124,158,1) 100%,rgba(102,45,145,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,124,158,1) 0%,rgba(0,179,228,1) 50%,rgba(0,124,158,1) 100%,rgba(102,45,145,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,124,158,1) 0%,rgba(0,179,228,1) 50%,rgba(0,124,158,1) 100%,rgba(102,45,145,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007c9e', endColorstr='#662d91',GradientType=0 ); /* IE6-9 */
+}
+.cmt-box-title {font-size: 20px; font-weight: bold; color: #020202; background: url(/img/cmt-title-bg.png) no-repeat left center; padding-left: 50px; line-height: 30px; border-bottom: 1px solid #87c1d1; margin-top: 0; margin-bottom: 18px; padding-bottom: 8px;}
+.cmt-box .form-horizontal .control-label {color: #fcfcfd; text-align: left; font-size: 20px; font-family: JosefinSans-Regular;}
+.cmt-box .btn-default {background-color: #9b2cdb; border-color: #6b199a; color: #fff; font-size: 21px;}
+.cmt-box .btn-default.active, .cmt-box .btn-default.focus, .cmt-box .btn-default:active, .cmt-box .btn-default:focus, .cmt-box .btn-default:hover, .open > .cmt-box .dropdown-toggle.btn-default {background-color: #8721c2;}
+.cmt-box-bottom-line {font-size: 18px; font-weight: bold; color: #000;}
+
+/*================= Some Basic Rules ===================*/
+.basic-rules h2 {color: #000; font-size: 34px; font-weight: bold; font-family: MyriadPro-BoldCondensed; margin-top: 0;}
+.basic-rules ol {padding-left: 0 ; margin-left: 25px; font-size: 20px; font-weight: bold; font-family: MyriadPro-BoldCondensed;}
+.basic-rules ol li {margin-bottom: 12px; color: #fff; padding-left: 7px;}
+.basic-rules ol li span {margin-bottom: 12px; color: #000;}
+
+/*================= Teacher’s Remark ===================*/
+.teachers-remark {padding: 30px 0; border-bottom: 1px solid #cecece; margin-bottom: 10px;}
+.teachers-remark h2 {color: #118ad8; margin-bottom: 20px; font-size: 26px; font-weight: bold;}
+.teachers-remark a {color: #fdb915;}
+
+/*================= Social Icons ===================*/
+.social-icons {position: fixed; top: 450px; right: 0; z-index: 1000;}
+.social-icons ul li {list-style-type: none; margin-bottom: 5px;}
+
+/*================= Footer ===================*/
+footer {background: #251c2c; color: #d8d8d8; padding-bottom: 10px; border-top: 1px solid #cecece;}
+footer .navbar-nav > li > a {color: #e6e6e6; font-weight: normal; font-family: Arial; font-size: 14px;}
+.nav > li > a:focus, .nav > li > a:hover {color: #337ab7;}
+.copyright {clear: both; text-align: center; font-size: 11px; padding-top: 15px;}
+.footer-right {margin-top: 10px;}
+.fa-envelope {font-weight: bold; font-size: 14px; color: #ffffff;}
+.fa-envelope a {padding-left: 10px; color: #ffffff; font-family: Arial;}
+.credit {font-size: 8px; margin-top: 12px;}
+
+/*================= Media ===================*/
+@media(min-width:1200px){.container{width:1140px}}
+@media(max-width:992px){
+    .mt-step-box .btn-default, .cmt-box .btn-default {font-size: 17px;}
+}
+@media(max-width:768px){
+    .navbar-brand {display: block;}
+    .navbar-nav {margin: 7.5px 0;}
+
+    .social-icons {top:0; position: absolute;}
+    .social-icons ul li {float: left; margin-left: 5px;}
+    header {padding-top: 25px;}
+    .banner-inner {padding-top: 0;}
+    .girl-img {height: auto; margin-bottom: 15px;}
+    .slogan {font-size: 42px;}
+    .subtitle {font-size: 22px;}
+    .sample-test {padding-bottom: 5px; margin-top: 10px;}
+    .cmt-box {margin-bottom: 15px;}
+    .mt-slogan {color: #010101; font-size: 35px; font-family: MyriadPro-BoldCondensed; line-height: normal !important; margin-top: 20px; margin-bottom: 0;}
+    .mt-subtitle {color: #10a3f5; font-size: 22px; font-family: MyriadPro-Regular;}
+    .mt-step-col {padding-left: 15px;}
+}
+
+@media(max-width:480px){
+    .slogan {font-size: 30px; padding-left: 15px;}
+    .subtitle {font-size: 18px; padding-left: 15px;}
+}

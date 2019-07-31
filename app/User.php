@@ -3,7 +3,10 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
+<<<<<<< HEAD
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+=======
+>>>>>>> 475aa789a66f4b546a1ea6f91672658dc27758bf
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
@@ -27,6 +30,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+<<<<<<< HEAD
 
     /**
      * The attributes that should be cast to native types.
@@ -36,4 +40,6 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+=======
+>>>>>>> 475aa789a66f4b546a1ea6f91672658dc27758bf
 }

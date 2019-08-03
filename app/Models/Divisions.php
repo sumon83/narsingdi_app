@@ -9,7 +9,7 @@ class Divisions extends Model
     /**
      * Table name for inserting Division
      */
-    protected $table = "nar_divisions";
+    protected $table = "nar_division";
 
     /**
      * 

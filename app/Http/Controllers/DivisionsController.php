@@ -45,10 +45,9 @@ class DivisionsController extends Controller
         $division->division_name_eng = $request->input("division_name");
         $division->division_name_bangla = $request->input("division_name_bangla");
         $division->division_code = $request->input("division_code");
-        $division->country_id = 1;
-        $division->inserted_by = 1;
-        $division->status_active = 1;
-        $division->is_deleted = 0;
+        $division->country_code = 880;
+        $division->active_status = 1;
+        $division->delete_status = 0;
         $division->created_at = date('Y-m-d H:i:s');
         //$division->update_at = $request->input("update_at");
 
